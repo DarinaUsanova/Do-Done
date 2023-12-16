@@ -1,0 +1,25 @@
+:root{
+  --background-color: #FBF7DA;
+  --text-color: #152428;
+  --wrapper-color: #F8CEB4;
+  --accent-color-dark: #007A74;
+  --accent-color-bright: #F26D40;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+.main-wrapper{
+  margin: 0 auto;
+  background-color: var(--wrapper-color);
+}
