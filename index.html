@@ -5,14 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Do-Done</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <div class="main-wrapper">
       <div class="top-wrapper">
-        <input id="input" type="text" placeholder="Let's do some plans" autocomplete="off" autofocus>
+        <input class="input" type="text" placeholder="Let's do some plans" autocomplete="off">
+        <button class="add-button">Add</button>
       </div>
-      <div class="bottom-wrapper"></div>
+      <div class="bottom-wrapper">
+        <ul>
+          <li>shop</li>
+          <li>study</li>
+          <li>gym</li>
+          <li>sleep</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
