@@ -97,7 +97,7 @@ ul{
   transition: .3s ease-in-out;
 }
 .fa-star:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 ul li{
   display: flex;
@@ -112,5 +112,5 @@ ul li.checked{
   transition: .3s ease-in-out;
 }
 .fa-eraser:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
