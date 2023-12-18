@@ -21,12 +21,19 @@ function addTask() {
   }
   saveData();
 }
+
+input.addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    addTask();
+  }
+})
+
 ul.addEventListener('click', function(e) {
   if (e.target.closest('.fa-eraser')) {
     e.target.closest('li').remove();
     saveData();
-  } else if (e.target.closest('li')) {
-    e.target.classList.toggle('checked');
+  } else if (e.target.closest('li') || e.target.closest('.fa-star')) {
+    e.target.closest('li').classList.toggle('checked');
     saveData();
   }
 });

@@ -4,7 +4,7 @@
   --accent-color-pink: #FFADD5;
   --accent-color-yellow: #FFF4AD;
   --accent-color-blue: #94D9F0;
-  --main-font: 'Playpen Sans', cursive;
+  --main-font: 'Playpen Sans', cursive, 'Shantell Sans', cursive;
   --box-shadow: 0px 12px 24px -1px rgba(0, 0, 0,0.18);
   --box-shadow-light: 0px 8px 16px -1px rgba(0, 0, 0,0.18);
 }
@@ -19,7 +19,7 @@ ul{
   list-style-type: none;
   font-size: 24px;
   padding-left: 20px;
-  width: 355px;
+  min-width: 355px;
 }
 .container{
   width: 100%;
@@ -32,7 +32,7 @@ ul{
 .main-wrapper{
   margin: 0 auto;
   background-color: var(--accent-color-blue);
-  width: 500px;
+  min-width: 500px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -83,11 +83,12 @@ ul{
 .add-button:hover{
   box-shadow: var(--box-shadow-light);
   transform: scale(1.1);
+  font-weight: 600;
 }
 .bottom-wrapper{
   background-color: var(--accent-color-pink);
   border-radius: 30px;
-  width: 355px;
+  min-width: 355px;
   display: flex;
   flex-direction: row;
   padding: 15px;
@@ -103,6 +104,8 @@ ul li{
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  text-align: center;
+  gap: 10px;
 }
 ul li.checked{
   text-decoration: line-through var(--accent-color-blue) 2px;
